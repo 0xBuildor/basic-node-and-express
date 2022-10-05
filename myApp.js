@@ -14,7 +14,8 @@ app.get('/', (req, res) => {
 });
 
 //Middleware for folder containing static assets
-app.use(express.static(__dirname + '/public'))
+// Normal usage
+app.use("/public", express.static(__dirname + "/public"));
 
 
 
