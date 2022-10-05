@@ -8,6 +8,14 @@ console.log("Hello World");
     response.send('Hello Express');
 }); */
 
+let obj = {
+    "message": "Hello json"
+}
+
+app.get('/json', (req, res) => {
+    res.json(obj)
+});
+
 //Serve html file
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
