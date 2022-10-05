@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
+//Middleware for folder containing static assets
+app.use(express.static(__dirname + '/public'))
+
+
 
 
 
